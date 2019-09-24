@@ -1,2 +1,2 @@
 Challenge Card
-Link:
+Link: https://juanyut.github.io/challenge-card/
