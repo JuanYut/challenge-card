@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
-// * My Components
+// * My Component
 import Card from './components/Card';
 
 function App() {
