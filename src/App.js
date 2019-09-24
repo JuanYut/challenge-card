@@ -5,17 +5,25 @@ import Card from './components/Card';
 
 function App() {
   const [images, setImages] = useState([]);
+  let auxArray = [];
 
   useEffect(() => {
-    fetch('https://picsum.photos/v2/list?limit=3')
+    fetch('https://picsum.photos/v2/list?limit=5')
       .then(response => response.json())
       .then(jsonThing => setImages(jsonThing));
   }, []);
 
+  const addUrls = () => {
+    images.forEach(ele => {
+      auxArray.push(ele.download_url);
+    });
+    return auxArray;
+  };
+
   return (
     <div className='App'>
       <Card
-        images={images}
+        images={addUrls()}
         title='Picsum API'
         description='Images from Picsum API'
       />

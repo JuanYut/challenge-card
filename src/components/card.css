@@ -2,11 +2,13 @@
   background-color: white;
   border-radius: 0 0 4.5% 4.5%;
   margin: 0.7rem 0;
+  width: 250px;
   box-shadow: 0 10px 5px -10px #000;
 }
 
 .image-card {
-  width: 350px;
+  width: 250px;
+  height: 200px;
 }
 
 .info-card {
@@ -24,6 +26,61 @@
   color: rgb(101, 101, 101);
 }
 
-.container-card:hover {
-  background-color: yellow;
+/* Slider */
+.slider {
+  width: 100%;
+  margin: auto;
+  overflow: hidden;
+}
+.slider ul {
+  display: flex;
+  width: 500%;
+  padding: 0;
+  margin: 0;
+}
+
+.slider ul:hover {
+  animation: move-to-left 20s infinite alternate linear;
+}
+
+.slider li {
+  width: 100%;
+  list-style: none;
+}
+
+@keyframes move-to-left {
+  0% {
+    margin-left: 0;
+  }
+  20% {
+    margin-left: -100%;
+  }
+
+  20% {
+    margin-left: -100%;
+  }
+  40% {
+    margin-left: -100%;
+  }
+
+  40% {
+    margin-left: -200%;
+  }
+  60% {
+    margin-left: -200%;
+  }
+
+  60% {
+    margin-left: -300%;
+  }
+  80% {
+    margin-left: -300%;
+  }
+
+  80% {
+    margin-left: -400%;
+  }
+  100% {
+    margin-left: -400%;
+  }
 }

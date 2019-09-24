@@ -6,7 +6,17 @@ const Card = props => {
 
   return (
     <div className='container-card'>
-      <img className='image-card' src='https://bit.ly/2mxmVaJ' alt='' />
+      <div className='slider'>
+        <ul>
+          {images.map((img, index) => {
+            return (
+              <li key={index}>
+                <img className='image-card' src={img} alt='' />
+              </li>
+            );
+          })}
+        </ul>
+      </div>
       <div className='info-card'>
         <h2 className='title-card'>{title}</h2>
         <p className='description-card'>{description}</p>
